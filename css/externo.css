@@ -1,0 +1,33 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h3{
+    color:red;
+}
+
+#idtitulo5{
+    color:cornflowerblue;
+}
+.amarillo{
+    color:yellowgreen
+}
+
+img[src*="png"]{
+    
+    height: 150px;
+    width: 150px;
+}
+
+img[src*="jpg"]{
+    
+    height: 150px;
+    width: 150px;
+}
+
+h6:hover{
+    color: blue;
+    font-size: 50px;
+}

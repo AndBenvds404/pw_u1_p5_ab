@@ -1,0 +1,52 @@
+*{
+    /* font: bold 14px Courier New; */
+  font-family: 'Courier New', Courier, monospace; 
+  color: slategrey;
+}
+
+
+.menu li{
+
+    list-style: none;
+    display: inline-block;
+    color: blueviolet;
+    border-radius: 7px;
+    padding: 7px;
+    background-color:black ;
+    border: solid blue 2px;
+    margin-right: 15px;
+    
+}
+
+.menu li:hover{
+    background-color: greenyellow;
+}
+
+
+.cabecera h1, h6{
+    text-align: right;
+}
+
+.menu{
+    padding: 10px 0px 10px 0px;
+    background: black;
+    text-align: left;
+    
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+body{
+    text-align: center;
+    background-color: darkblue;
+}
+
+.agrupados{
+    border: 1px solid white;
+    background-color: darkgray;
+    width: 900px;
+    margin: 15px auto;
+}
