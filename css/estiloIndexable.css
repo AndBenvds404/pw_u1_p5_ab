@@ -2,6 +2,7 @@
     /* font: bold 14px Courier New; */
   font-family: 'Courier New', Courier, monospace; 
   color: slategrey;
+  
 }
 
 
@@ -41,12 +42,92 @@ h1{
 
 body{
     text-align: center;
-    background-color: darkblue;
+    
+    background: linear-gradient(to top,rgb(0, 0, 0), rgba(76, 16, 104, 0.795),rgb(0, 0, 0),rgba(76, 16, 104, 0.795));
 }
 
 .agrupados{
     border: 1px solid white;
     background-color: darkgray;
     width: 900px;
-    margin: 15px auto;
+    margin: 30px auto;
 }
+
+.cabecera{
+    background: linear-gradient(to top,rgb(0, 0, 0), rgba(76, 16, 104, 0.795),rgb(0, 0, 0));
+    border: 10px outset black;
+    padding: 20px;
+
+}
+
+
+.seccion{
+    float: left;
+    width: 600px;
+    margin:10px
+}
+
+article{
+    background: rgb(18, 10, 94);
+    border: 10px outset blueviolet;
+    margin-top: 20px;
+}
+
+time{
+    color: red;
+}
+
+article footer{
+    text-align: left;
+}
+
+#idreferencias{
+    width: 225px;
+    float: right;
+    margin: 20px 0px;
+    border: solid 1px white;
+    box-shadow: 10px 10px 8px #4c1e6b;
+    margin-right: 33px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+
+.pie{
+    
+    clear: both;
+    color: black;
+    font-size: 30px;
+}
+
+#idreferencias blockquote{
+    padding: 20px;
+    border: 2px outset black;
+    background-color: blueviolet;
+    color: black;
+
+}
+
+img{
+    width: 400px;
+    height: 500px;
+}
+
+.glitch {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+   
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+
+
