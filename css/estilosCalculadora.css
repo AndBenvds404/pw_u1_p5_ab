@@ -1,0 +1,66 @@
+*{
+ font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+h1{
+    font-size: 40px;
+}
+button{
+    background-color: black;
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculadora-numeros{
+    display: grid;
+    grid-template-columns: repeat(3, 95px);
+    padding: 10px 10px 0px 10px;
+    
+}
+
+.col-3{
+    grid-column: span 3;
+}
+
+.calculadora-operaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 142.5px);  
+    padding: 0px 0px 10px 10px;
+    
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.calculadora{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 307.5px);
+    background: rgb(43, 122, 226); 
+    border-radius: 15px;
+    box-shadow: 20px 20px 15px rgb(36, 171, 189)
+}
+
+#IdlabelResultado{
+    height: 20px;
+    text-align: center;
+    
+    
+    
+}
+
+.calculadora label{
+    text-align: center;
+    
+}
+
+button:hover{
+    background: red;
+}

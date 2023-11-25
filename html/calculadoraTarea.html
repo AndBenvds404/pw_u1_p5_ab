@@ -8,57 +8,58 @@
 
     
     <script src="../js/calculadora.js"> </script>
-
+    <link rel="stylesheet" href="../css/estilosCalculadora.css">
 </head>
 <body>
 
-    <div >
 
-    
-        <header class="cabecera"> 
-            <h1> CALCULADORA</h1>
+    <div class="container">
+        <header> 
+            
         </header>
 
-        <section>
-            
-       
-            <label  id="IdlabelResultado" for="">  </label>
-           
+        <section >
 
-            <div>
-                
-                <button onclick="insertarElemento(7)"> 7 </button>
-                <button onclick="insertarElemento(8)"> 8 </button>
-                <button onclick="insertarElemento(9)"> 9 </button>
-                <button onclick="insertarElemento(4)"> 4 </button>
-                <button onclick="insertarElemento(5)"> 5 </button>
-                <button onclick="insertarElemento(6)"> 6 </button>
-                <button onclick="insertarElemento(1)"> 1 </button>
-                <button onclick="insertarElemento(2)"> 2 </button>
-                <button onclick="insertarElemento(3)"> 3 </button>
-                <button onclick="insertarElemento(0)"> 0 </button> 
-                 <button onclick="operacion('/')"> / </button>
-                 <button onclick ="operacion('+')" > + </button>
-                <button onclick="operacion('-')"> - </button>
-                <button onclick="operacion('*')" > * </button>
-                <button onclick="reset()"> reset </button>
+            <div class="calculadora">
+               <h1> CALCULADORA</h1>
                
-                <button onclick="calcular()"> = </button>
-            
+               <label  id="IdlabelResultado" for="">  </label>
+                    <div class="calculadora-numeros">
+                            
+                    <button onclick="insertarElemento(1)"> 1 </button>
+                    <button onclick="insertarElemento(2)"> 2 </button>
+                    <button onclick="insertarElemento(3)"> 3 </button>
+                    <button onclick="insertarElemento(4)"> 4 </button>
+                    <button onclick="insertarElemento(5)"> 5 </button>
+                    <button onclick="insertarElemento(6)"> 6 </button>
+                    <button onclick="insertarElemento(7)"> 7 </button>
+                    <button onclick="insertarElemento(8)"> 8 </button>
+                    <button onclick="insertarElemento(9)"> 9 </button>
+                    <button class="col-3" onclick="insertarElemento(0)"> 0 </button>
+                </div>   
+                
+                <div class="calculadora-operaciones">
+                    
+                    
+                    <button  onclick="operacion('/')"> / </button>
+                    <button onclick ="operacion('+')" > + </button>
+                    <button onclick="operacion('-')"> - </button>
+                    <button onclick="operacion('*')" > * </button>
+                    <button  onclick="reset()"> reset </button>
+                    <button onclick="calcular()"> = </button>
+                    
+                    
+                </div>
             </div>
             
-           
-        
-
+               
             
-
             
-           
-
-
-
+            
         </section>
+
+    </div>    
         <footer> </footer>
-    </div>
+        
 </body>
 </html>
