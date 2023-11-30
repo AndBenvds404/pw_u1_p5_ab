@@ -1,0 +1,94 @@
+body{
+    background-color: #59abe3;
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 340px;
+    height: 490px;
+    background: #e6e6e6;
+    border-radius: 17px;
+    padding: 20px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 0px 40px -7px black;
+}
+
+
+h2{
+    margin: 20px 0px;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 2px solid black;
+}
+
+p:before{ /*se renderiza antes de cargar la pagina*/
+    
+    content:attr(type);
+    display: block;
+    margin: 5px 2px;
+    font-size: 16px;
+    color: #5a5a5a;
+    
+}
+
+
+input{
+    font-family: 'Courier New', Courier, monospace;
+    width: 98%;
+    border: none;
+    border-bottom: 2px solid #bebed2;
+    background: none;
+    
+
+}
+
+input:focus{
+    border-bottom: 3px solid #78788c;
+    outline: none;
+    
+}
+
+
+
+.btn-guardar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+button{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #2f9de69d;
+    color: #36363f;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: white;
+}
+
+header{
+    text-align: center;
+    font-size: 27px;
+    padding: 10px;
+
+    
+}
+
+input:hover{
+    border-bottom: 3px solid #78788c;
+    
+}
+
+
+
