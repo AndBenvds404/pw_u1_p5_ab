@@ -67,14 +67,16 @@ input:focus{
 button{
     padding: 7px;
     border-radius: 7px;
-    background-color: #2f9de69d;
+    background-color: white;
+    
     color: #36363f;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
 
 button:hover{
-    background-color: white;
+    background-color: #2f9de69d;
+    cursor: pointer;
 }
 
 header{
