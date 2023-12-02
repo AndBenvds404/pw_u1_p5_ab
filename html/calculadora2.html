@@ -14,28 +14,30 @@
         <div class="container">
 
             <div class="calculadora">
-                <div class="pantalla">
+                <div id="IdlabelResultado" class="pantalla">
                     resultado
                 </div>
-                <button>C</button>
-                <button>&#x2190;</button>
-                <button>%</button>
-                <button>/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>X</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button>0</button>
+                <button onclick="reset()" class="btn-cero" >C</button>
+                <button onclick="borrar()">&#x2190;</button>
+                <button onclick="operacion('/')">/</button>
+                <!-- <button>/</button> -->
+                <button onclick="insertarElemento(7)">7</button>
+                <button onclick="insertarElemento(8)">8</button>
+                <button onclick="insertarElemento(9)">9</button>
+                <button onclick="operacion('*')">X</button>
+                <button onclick="insertarElemento(4)">4</button>
+                <button onclick="insertarElemento(5)">5</button>
+                <button onclick="insertarElemento(6)">6</button>
+                <button onclick="operacion('-')">-</button>
+                <button onclick="insertarElemento(1)">1</button>
+                <button onclick="insertarElemento(2)">2</button>
+                <button onclick="insertarElemento(3)">3</button>
+                <button onclick="operacion('+')">+</button>
+                <button onclick="insertarElemento(0)" class="btn-cero">0</button>
+                
+                
                 <button>.</button>
-                <button>=</button>
+                <button onclick="calcular()">=</button>
                 
             </div>
                         

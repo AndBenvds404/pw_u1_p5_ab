@@ -1,3 +1,8 @@
+*{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -24,6 +29,12 @@
     background-color: #363636;
     text-align: right;
     box-shadow: 0px 0px 0px 7px #00000033;
+    color: aquamarine;
+    font-size:20px;
+    
+
+    
+
     
 }
 
@@ -34,5 +45,22 @@ button{
     border: none;
     background: #019e79;
     box-shadow:  5px 5px 1px -2px #00000040;
+    cursor: pointer;
+    font-size: 20px
 }
 
+
+
+button:active{
+    background: wheat;
+}
+
+
+
+.btn-cero{
+    grid-column: span 2;
+}
+
+body{
+    background: #224870;
+}
