@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estudianteFormulario.css">
+    <script src=""></script>
+    <title>formulario</title>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <header>
+            <h1> &#x1E2;studiante </h1>
+        </header>    
+    
+        <nav></nav>
+    
+        <section id="miApp">
+            <!-- url del api en "action"-->
+            <form class="formulario" action="http://miApiEjemplo" method="POST"> 
+                <h2>Nuevo Estudiante</h2>
+                <p type="Nombre:" >  <input id="idNombre" v-model="nombre" type="text"> </p>
+                <p type="Apellido:" >  <input id="idApellido" v-model="apellido" type="text"> </p>
+                <p type="Edad:" >  <input id="idEdad" v-model="edad" type="text"> </p>
+                <p type="G&#233;nero:" >  <input id="idGenero" v-model="genero" type="text"> </p>
+                <p type="Pa&#xED;s:" >  <input id="idPais" v-model="pais" type="text"> </p>
+                <div class="btn-guardar">
+                    <button @click="aniadir">GUARDAR </button>
+                    
+                </div>
+                
+            </form>
+        </section>
+    
+        <footer>&#xA9; Derechos reservados</footer>
+
+    </div>
+    
+</body>
+</html>

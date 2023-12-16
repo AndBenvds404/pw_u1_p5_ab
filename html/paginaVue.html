@@ -29,16 +29,19 @@
             <hr>
             <p>{{lista}}</p>
             <label for="idNombre">Nombre</label>
-            <input v-on:keypress="presionandoTecla" v-model="nombre" id="idNombre" type="text">
+            <input v-model="nombre" id="idNombre" type="text">
 
             <label for="idApellido">Apellido</label>
-            <input v-on:keypress="presionandoTecla" v-model="apellido" id="idApellido" type="text">
+            <input @keypress.enter="presionandoTeclaModEvent" v-model="apellido" id="idApellido" type="text">
             
             <button v-on:click="agregar">Agregar</button>
             {{nombre}}
             <ul>
-                <li v-for="({nombre, apellido}, index) in lista">{{index+1}} : {{nombre}} - {{apellido}}
-                    <button>Banear</button>
+                <li v-for="({nombre, apellido}, index) in lista">
+                    <p v-show="nombre!==''">{{index+1}} : {{nombre}} - {{apellido}} 
+                        <button >Banear</button>
+                    </p>
+                    
                 </li>
                 
                 

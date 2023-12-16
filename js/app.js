@@ -4,7 +4,7 @@ console.log(Vue);
 const estudiantes = [{nombre:"Andres", apellido: "Benavides"},
 {nombre:"Pepe", apellido: "Grisho"},
 {nombre:"Vegeta", apellido: "7777"},
-{nombre:"Yiu", apellido: "Fuentes"},
+{nombre:"Willy", apellido: "Rex"},
 {nombre:"Toni", apellido: "Nadal"}
 ]
 
@@ -43,6 +43,11 @@ const app = Vue.createApp({
             if (enter === 13){
                 this.agregar()
             }
+        },
+
+        presionandoTeclaModEvent(){
+            
+            this.agregar()
         }
     },
     watch:{
@@ -54,7 +59,7 @@ const app = Vue.createApp({
             valor:100,
             lista: estudiantes,
             
-            nombre: null,
+            nombre: undefined,
             apellido: null
             
         }
