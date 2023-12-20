@@ -1,11 +1,11 @@
 console.log("elementos Vue");
 console.log(Vue);
 
-const estudiantes = [{nombre:"Andres", apellido: "Benavides"},
-{nombre:"Pepe", apellido: "Grisho"},
-{nombre:"Vegeta", apellido: "7777"},
-{nombre:"Yiu", apellido: "Fuentes"},
-{nombre:"Toni", apellido: "Nadal"}
+const estudiantes = [{nombre:"Pepe", apellido: "Grisho", edad:'12', genero:"M",pais:"Ecuador"},
+{nombre:"Pepe", apellido: "Angulo", edad:'12', genero:"M",pais:"Ecuador"},
+{nombre:"Toni", apellido: "Moya", edad:'12', genero:"M",pais:"Ecuador"},
+{nombre:"Andy", apellido: "Lux", edad:'12', genero:"M",pais:"Ecuador"},
+{nombre:"Lupe", apellido: "Tera", edad:'12', genero:"F",pais:"Ecuador"},
 ]
 
 console.log(estudiantes)
@@ -33,7 +33,7 @@ const app = Vue.createApp({
         agregar(){
         
             console.log('hola')
-            this.lista.push({nombre:this.nombre, apellido: this.apellido})
+            this.lista.push({nombre:this.nombre, apellido: this.apellido, pais:this.pais, genero:this.genero, edad:this.edad})
         },
 
         presionandoTecla(event){
@@ -55,7 +55,11 @@ const app = Vue.createApp({
             lista: estudiantes,
             
             nombre: null,
-            apellido: null
+            apellido: null,
+            edad:null,
+            pais:null,
+            genero:null
+
             
         }
     }

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estudianteFormulario.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
     <title>formulario</title>
 </head>
 <body>
 
-
+ <div id="miApp">
     <div class="container">
 
         <header>
@@ -19,24 +21,45 @@
     
         <section>
             <!-- url del api en "action"-->
-            <form class="formulario" action="http://miApiEjemplo" method="POST"> 
+            <form class="formulario" > 
                 <h2>Nuevo Estudiante</h2>
-                <p type="Nombre:" >  <input type="text"> </p>
-                <p type="Apellido:" >  <input type="text"> </p>
-                <p type="Edad:" >  <input type="text"> </p>
-                <p type="G&#233;nero:" >  <input type="text"> </p>
-                <p type="Hobbie:" >  <input type="text"> </p>
-                <p type="Pa&#xED;s:" >  <input type="text"> </p>
+                <p   type="Nombre:" >  <input v-model="nombre" type="text"> </p>
+                <p  type="Apellido:" >  <input v-model="apellido"  type="text"> </p>
+                <p   type="Edad:" >  <input v-model="edad" type="text"> </p>
+                <p   type="G&#233;nero:" >  <input v-model="genero"  type="text"> </p>
+                
+                <p  type="Pa&#xED;s:" >  <input v-model="pais" type="text"> </p>
                 <div class="btn-guardar">
-                    <button>GUARDAR </button>
+                    <button v-on:click="agregar">GUARDAR </button>
                     
                 </div>
                 
             </form>
+            
+            
         </section>
-    
-        <footer>&#xA9; Derechos reservados</footer>
+    <table>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>edad</th>
+                  <th>pais</th>
+                  <th>genero    </th>
+                </tr>
+                <tr v-for="({nombre, apellido, edad, pais, genero}, index) in lista">
+                    <td >{{nombre}}</td>
+                    <td >{{apellido}}</td>
+                    <td >{{edad}}</td>
+                    <td >{{pais}}</td>
+                    <td >{{genero}}</td>
 
+                 
+                  </tr>
+                
+    </table>
+
+</div>
+<script src="../js/app.js"></script>
     </div>
     
 </body>
